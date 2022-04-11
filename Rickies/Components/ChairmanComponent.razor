@@ -1,6 +1,18 @@
 ﻿@if (Chairman is not null)
 {
-    <div>
-        <em>@Chairman.Name</em>
+    <div class="card">
+        <img class="card-img-top" src="@Chairman.Memoji" alt=@Chairman.ToString() />
+        <div class="card-body">
+            <div class="card-title">
+                <strong>@Title</strong>
+            </div>
+            <div class="card-subtitle">
+                <p>@Chairman.FullName</p>
+                <em>@Chairman.Location</em>
+            </div>
+        </div>
+        <div class="card-body">
+            <a class="btn btn-primary twitter-link" href="@Chairman.Twitter">Twitter</a>
+        </div>
     </div>
 }

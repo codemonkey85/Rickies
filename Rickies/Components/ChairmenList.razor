@@ -1,7 +1,5 @@
-﻿@if (chairmanList.Any())
+﻿@if (ChairmanResponse is not null)
 {
-    @foreach (var chairman in chairmanList)
-    {
-        <ChairmanComponent Chairman=chairman />
-    }
+    <ChairmanComponent Chairman=ChairmanResponse.KeynoteChairman Title="Keynote Chairman" />
+    <ChairmanComponent Chairman=ChairmanResponse.AnnualChairman Title="Annual Chairman" />
 }

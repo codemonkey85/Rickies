@@ -1,10 +1,11 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="page">
-@*    <div class="sidebar">
+    @*
+        <div class="sidebar">
         <NavMenu />
-    </div>
-*@
+        </div>
+    *@
     <main>
         <div class="top-row px-4">
             <a href="https://github.com/codemonkey85/Rickies" target="_blank">Source code at GitHub</a>
@@ -12,6 +13,9 @@
 
         <article class="content px-4">
             @Body
+            <footer>
+                Special thanks to Lex Postma (<a href="https://rickies.co/api">Rickies.co</a>, <a href="https://github.com/lexpostma/Rickies/">GitHub</a>)
+            </footer>
         </article>
     </main>
 </div>

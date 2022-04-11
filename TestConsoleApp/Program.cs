@@ -4,9 +4,9 @@ using System.Text.Json.Serialization;
 HttpClient? httpClient = new();
 
 HttpRequestMessage? request = new(HttpMethod.Get, "https://rickies.co/api/chairmen.json");
-using HttpResponseMessage? httpResponse = await httpClient.SendAsync(request);
+using var httpResponse = await httpClient.SendAsync(request);
 
-ChairmanResponse? results = await httpResponse.Content.ReadFromJsonAsync<ChairmanResponse?>();
+var results = await httpResponse.Content.ReadFromJsonAsync<ChairmanResponse?>();
 
 Console.WriteLine($"Keynote Chairman: {results?.KeynoteChairman}");
 Console.WriteLine($"Annual Chairman: {results?.AnnualChairman}");
@@ -39,8 +39,5 @@ public class Chairman
     [JsonPropertyName("memoji")]
     public string? Memoji { get; set; }
 
-    public override string ToString()
-    {
-        return $"{Name} {LastName}";
-    }
+    public override string ToString() => $"{Name} {LastName}";
 }

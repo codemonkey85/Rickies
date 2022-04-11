@@ -6,7 +6,7 @@ public partial class ChairmenList
 
     protected override async Task OnInitializedAsync()
     {
-        ChairmanResponse? chairmanResponse = await RickiesApiService.GetChairmen();
+        var chairmanResponse = await RickiesApiService.GetChairmen();
         if (chairmanResponse is null)
         {
             return;

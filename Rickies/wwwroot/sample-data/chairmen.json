@@ -1,16 +1,16 @@
 {
-    "keynote_chairman": {
-        "name": "Federico",
-        "last_name": "Viticci",
-        "location": "Rome, Italy",
-        "twitter": "https://twitter.com/viticci",
-        "memoji": "http://rickies.co/images/memoji/memoji-federico-default.png"
-    },
-    "annual_chairman": {
-        "name": "Stephen",
-        "last_name": "Hackett",
-        "location": "Memphis, TN, USA",
-        "twitter": "https://twitter.com/ismh",
-        "memoji": "http://rickies.co/images/memoji/memoji-stephen-default.png"
-    }
+  "keynote_chairman": {
+    "name": "Federico",
+    "last_name": "Viticci",
+    "location": "Rome, Italy",
+    "twitter": "https://twitter.com/viticci",
+    "memoji": "http://rickies.co/images/memoji/memoji-federico-default.png"
+  },
+  "annual_chairman": {
+    "name": "Stephen",
+    "last_name": "Hackett",
+    "location": "Memphis, TN, USA",
+    "twitter": "https://twitter.com/ismh",
+    "memoji": "http://rickies.co/images/memoji/memoji-stephen-default.png"
+  }
 }

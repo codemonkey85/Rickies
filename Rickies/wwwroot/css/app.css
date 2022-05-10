@@ -1,7 +1,62 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
+@media (prefers-color-scheme: dark) {
+    body.systemDarkPreference {
+        --background: #2d2d2d;
+        --font-color: white;
+        --highlight: #393939;
+        --highlight-2: #414648;
+        --link: #3ca4ff;
+        --priority-none: currentColor;
+        --priority-low: green;
+        --priority-medium: orange;
+        --priority-high: red;
+        --menu-active: #454545;
+        --menu-hover: #7e7e7e;
+        --border-color: #959595;
+        --nav-link-color: white;
+    }
+}
+
+/* Default */
+
+body {
+    --background: white;
+    --font-color: black;
+    --highlight: #f7f7f7;
+    --highlight-2: #e2e3e5;
+    --link: #0366d6;
+    --priority-none: currentColor;
+    --priority-low: green;
+    --priority-medium: orange;
+    --priority-high: red;
+    --menu-active: #CDCDCD;
+    --menu-hover: #e6e6e6;
+    --border-color: #959595;
+    --nav-link-color: black;
+}
+
+    /* Dark */
+    body.dark {
+        --background: #2d2d2d;
+        --font-color: white;
+        --highlight: #393939;
+        --highlight-2: #414648;
+        --link: #3ca4ff;
+        --priority-none: currentColor;
+        --priority-low: green;
+        --priority-medium: orange;
+        --priority-high: red;
+        --menu-active: #454545;
+        --menu-hover: #7e7e7e;
+        --border-color: #959595;
+        --nav-link-color: white;
+    }
+
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--font-color);
 }
 
 h1:focus {
@@ -9,7 +64,12 @@ h1:focus {
 }
 
 a, .btn-link {
-    color: #0071c1;
+    /*color: var(--nav-link-color);*/
+}
+
+.alert-secondary {
+    background-color: var(--highlight-2);
+    color: var(--font-color);
 }
 
 .btn-primary {
@@ -32,6 +92,33 @@ a, .btn-link {
 
 .validation-message {
     color: red;
+}
+
+.card {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    min-width: 350px;
+    background-color: var(--background);
+    border-color: var(--border-color);
+}
+
+    .card img {
+        width: 25%;
+    }
+
+.card-body {
+    background-color: var(--background);
+    color: var(--font-color);
+}
+
+.twitter-link {
+    float: right;
+    margin-right: 5px;
+    color: white;
 }
 
 #blazor-error-ui {

@@ -20,5 +20,5 @@ public class Chairman
 
     public string? FullName => $"{Name} {LastName}";
 
-    public override string ToString() => FullName ?? base.ToString();
+    public override string? ToString() => FullName;
 }

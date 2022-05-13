@@ -1,7 +1,4 @@
-﻿using System.Net.Http.Json;
-using Rickies.Models;
-
-HttpClient? httpClient = new();
+﻿HttpClient? httpClient = new();
 
 HttpRequestMessage? request = new(HttpMethod.Get, "https://rickies.co/api/chairmen.json");
 using var httpResponse = await httpClient.SendAsync(request);

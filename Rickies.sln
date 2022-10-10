@@ -10,9 +10,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CB5EE420-CD4F-4498-8B43-D3D43DB3BDDD}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rickies.Models", "Rickies.Models\Rickies.Models.csproj", "{AA4B9C1C-5A7B-41F7-9B5C-ED895A6B3B38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rickies.Models", "Rickies.Models\Rickies.Models.csproj", "{AA4B9C1C-5A7B-41F7-9B5C-ED895A6B3B38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

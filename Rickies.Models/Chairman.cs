@@ -18,7 +18,7 @@ public class Chairman
     [JsonPropertyName("memoji")]
     public string? Memoji { get; set; }
 
-    public string? FullName => $"{Name} {LastName}";
+    public string FullName => $"{Name} {LastName}";
 
     public override string? ToString() => FullName;
 }
